@@ -1,0 +1,52 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "علوم کامپیوتر",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop",
+      "description": "هوش مصنوعی، امنیت، داده‌کاوی و مهندسی نرم‌افزار"
+    },
+    {
+      "id": 2,
+      "name": "مهندسی برق",
+      "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=800&h=500&fit=crop",
+      "description": "مخابرات، قدرت، الکترونیک و کنترل"
+    },
+    {
+      "id": 3,
+      "name": "اقتصاد",
+      "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=500&fit=crop",
+      "description": "اقتصاد مالی، توسعه و بانکداری"
+    },
+    {
+      "id": 4,
+      "name": "حقوق",
+      "image": "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=800&h=500&fit=crop",
+      "description": "حقوق بین‌الملل، جزا و تجارت"
+    },
+    {
+      "id": 5,
+      "name": "زراعت",
+      "image": "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=800&h=500&fit=crop",
+      "description": "علوم گیاهی، بیوتکنولوژی و آبیاری"
+    },
+    {
+      "id": 6,
+      "name": "پزشکی",
+      "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=500&fit=crop",
+      "description": "پزشکی بالینی، جراحی و تحقیقات"
+    },
+    {
+      "id": 7,
+      "name": "داروسازی",
+      "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop",
+      "description": "شیمی دارویی، فارماکولوژی"
+    },
+    {
+      "id": 8,
+      "name": "ادبیات فارسی",
+      "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=500&fit=crop",
+      "description": "زبان‌شناسی، نقد ادبی و تاریخ"
+    }
+  ]
+}

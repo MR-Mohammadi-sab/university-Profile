@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>پوهنتون البرز </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+
+    <nav class="navbar" >
+        <div class="navbar-desktop">
+            <a href="#" class="logo main-logo" data-page="home">
+                <i class="fas fa-university logo-icon"></i>
+                <div class="logo-text">
+                    <div >پوهنتون البرز</div>
+                    <div style="font-size: 0.8rem;">Alborz University</div>
+                </div>
+            </a>
+    
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">خانه</a></li>
+                <li><a href="#" data-page="courses">دوره‌ها</a></li>
+                <li><a href="#" data-page="features">ویژگی‌ها</a></li>
+                <li><a href="#" data-page="research">پژوهش</a></li>
+                <li><a href="#" data-page="blog">وبلاگ</a></li>
+                <li><a href="#" data-page="about">درباره ما</a></li>
+                <li><a href="#" data-page="contact">تماس</a></li>
+            </ul>    
+    
+            <div class="btnContainer">
+                <button class="btn btn-outline loginBtn" id="loginBtn">ورود</button>
+                <button class="btn btn-primary signupBtn" id="signupBtn">ثبت‌نام</button>
+                <button class="theme-toggle darkModeToggle" id="darkModeToggle">🌙 تیره</button>
+            </div>
+            <button id="bars"><i class="fa-solid fa-bars" ></i></button>
+        </div>
+        <!-- mobile navbar -->
+        <aside class="mobile-container">
+            <div class="mobileLogo">
+                <a href="#" class="logo" data-page="home">
+                   <i class="fas fa-university logo-icon"></i>
+                   <div class="logo-text">
+                       <h1 >پوهنتون البرز</h1>
+                       <h1 style="font-size: 0.8rem;">Alborz University</h1>
+                   </div>
+               </a>
+                <div class="btnContainer-mobile">
+                    <button class="btn btn-outline loginBtn" id="loginBtn">ورود</button>
+                    <button class="btn btn-primary signupBtn" id="signupBtn">ثبت‌نام</button>
+                    <button class="theme-toggle darkModeToggle" id="darkModeToggle">🌙 تیره</button>
+                </div>
+            </div>
+
+            <div class="mobilNav">
+            <button id="cross"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav-links-mobile">
+                <li><a href="#" data-page="home">خانه</a></li>
+                <li><a href="#" data-page="courses">دوره‌</a></li>
+                <li><a href="#" data-page="features">ویژگی‌ها</a></li>
+                <li><a href="#" data-page="research">پژوهش</a></li>
+                <li><a href="#" data-page="blog">وبلاگ</a></li>
+                <li><a href="#" data-page="about">درباره ما</a></li>
+                <li><a href="#" data-page="contact">تماس</a></li>
+            </ul>    
+            </div>
+        </aside>
+    </nav>
+
+    
+
+    <!-- Login/Signup Modal -->
+    <div id="authModal" class="modal">
+        <form class="modal-form">
+            <h2 id="modalTitle">ورود به حساب کاربری</h2> 
+            <div>
+                <label for="fullName">نام کامل</label>
+                <input type="text" id="fullName" placeholder="نام و نام خانوادگی"  >
+                <p  class="error" ></p>
+            </div>
+            <div>
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" placeholder="ایمیل">
+                <p  class="error" ></p>
+            </div>
+            <div>
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" placeholder="رمز عبور">
+                <p  class="error" ></p>
+            </div>
+            <div>
+                <label for="confirmPassword">تکرار رمز عبور</label>
+                <input type="password" id="confirmPassword" placeholder="تکرار رمز عبور" >
+                <p  class="error" ></p>
+            </div>
+            
+            <div class="modal-buttons">
+                <button class="btn btn-primary" id="modalSubmitBtn" type="submit">ورود</button>
+                <button class="btn btn-outline" id="modalCloseBtn" type="button">انصراف</button>
+            </div>
+            <p id="toggleAuthMode">ثبت‌نام نکرده‌اید؟ ثبت‌نام کنید</p>
+        </form>
+    </div>
+
+    
+    <main id="home-page" class="page active-page">
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">🎓 پیشرو در آموزش عالی آسیا</div>
+                <h1>تحول دیجیتال <span>آموزش</span><br>در قلب تمدن</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">بیش از ۲۵٬۰۰۰ محصل از ۳۵ کشور جهان به سامانه آموزشی پیشرفته ما متصل هستند. آینده را امروز تجربه کنید.</p>
+                <button class="btn btn-primary"> ثبت نام کردن</button>
+            </div>
+            <div class="hero-illustration">
+                <img src="./assets/images/hero.jpg" alt="پوهنتون مدرن">
+            </div>
+        </section>
+        <!-- features -->
+        <section >
+            <h2 class="section-title">خدمات ممتاز پوهنتون</h2>
+            <div class="features-grid" id="featuresGrid"></div>
+        </section>
+        <!-- course -->
+        <section class="course-section">
+            <h2 style="font-size: 2rem; text-align: center;">رشته‌های تحصیلی برتر</h2>
+            <p style="text-align: center; color: var(--text-muted);">پیشرو در آموزش عالی با بیش از ۵۰ رشته تخصصی</p>
+            <div class="course-row" id="courseRow"></div>
+        </section>
+
+        <div class="demo-section">
+            <h3 style="font-size: 1.8rem;">پیش‌نمایش سامانه آموزشی</h3>
+            <div class="video-wrapper">
+                <video controls  height="400">
+                    <source src="./assets/images/demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- testimonial -->
+        <section>
+            <h2 class="section-title">نظرات جامعه پوهنتونی</h2>
+            <div class="testimonial-grid" id="testimonialsGrid"></div>
+        </section>
+
+
+
+        <!-- faq -->
+        <section>
+            <h2 class="section-title">پرسش‌های متداول</h2>
+            <div class="faq-grid" id="faqGrid"></div>
+        </section>
+    </main>
+
+    <!-- course page -->
+    <main id="courses-page" class="page">
+        <section style="padding: 3rem 0;">
+            <h2 class="section-title">دوره‌های تخصصی پوهنتون</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">بیش از ۵۰ رشته در مقاطع کارشناسی، ارشد و دکتری</p>
+            <div class="course-row" id="coursesPageRow"></div>
+        </section>
+    </main>
+
+    <!-- features page -->
+    <main id="features-page" class="page">
+        <section style="padding: 3rem 0;">
+            <h2 class="section-title">ویژگی‌های منحصر به فرد</h2>
+            <div class="features-grid" id="featuresPageGrid"></div>
+        </section>
+    </main>
+
+    <!-- research page -->
+    <main id="research-page" class="page">
+        <section style="padding: 3rem 0;">
+            <h2 class="section-title">مراکز تحقیقاتی و نوآوری</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">پیشگام در پژوهش‌های مرزی و فناوری‌های نوین</p>
+            <div class="research-grid" id="researchGrid"></div>
+        </section>
+    </main>
+
+    <!-- blog-page -->
+    <main id="blog-page" class="page">
+        <section style="padding: 3rem 0;">
+            <h2 class="section-title">اخبار و مقالات علمی</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">جدیدترین دستاوردها و رویدادهای پوهنتونی</p>
+            <div class="blog-grid" id="blogGrid"></div>
+        </section>
+    </main>
+
+    <!-- about page -->
+    <main id="about-page" class="page">
+        <section style="padding: 3rem 0; text-align: center;">
+            <h2 class="section-title">درباره پوهنتون بین‌المللی البرز</h2>
+            <p style="max-width: 800px; margin: 1rem auto;">تأسیس ۱۳۸۰، یکی از برترین مراکز علمی با تمرکز بر فناوری و نوآوری. مأموریت ما تربیت نیروی متخصص و پژوهش‌های مرزی در حوزه علوم و فناوری است.</p>
+            <img src="./assets/images/library.jpg" style="border-radius: 32px; width:100%; max-width:600px; margin-top:2rem;">
+            <div id="statsSection" class="stats-section">
+        
+                <div class="stat-item">
+                    <div class="stat-number">۲۵٬۰۰۰+</div>
+                    <div class="stat-label">دانشجو فعال</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">۱٬۸۰۰+</div>
+                    <div class="stat-label">عضو هیئت علمی</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">۷۰۰+</div>
+                    <div class="stat-label">مقاله علمی</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">۹۸٪</div>
+                    <div class="stat-label">رضایت مندی</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- contact page -->
+    <main id="contact-page" class="page">
+        <section style="padding: 3rem 0;">
+            <h2 class="section-title">ارتباط با ما</h2>
+            <div class="contact-container">
+                <div class="contact-cart">
+                    <form class="contactForm contact-form">
+                        <h3>فرم تماس</h3>
+                        <div>
+                            <label for="fullName">نام کامل</label>
+                            <input type="text" id="contactName" placeholder="نام کامل">
+                            <p  class="error" ></p>
+                        </div>
+                        <div>
+                            <label for="fullName">ایمیل </label>
+                             <input type="email" id="contactEmail" placeholder="ایمیل">
+                            <p  class="error" ></p>
+                        </div>
+                        <div>
+                            <label for="fullName">موضوع </label>
+                             <input type="text" id="contactSubject" placeholder="موضوع">
+                            <p  class="error" ></p>
+                        </div>
+                        <div>
+                            <label for="fullName">پیام شما</label>
+                            <textarea id="contactMessage" rows="4" placeholder="پیام شما"></textarea>
+                            <p  class="error" ></p>
+                        </div>
+
+                        <button class="btn btn-primary" id="sendContactBtn">ارسال پیام</button>
+                    </form>
+                </div>
+
+                <div class="contact-cart">
+                    <div class="contact-form">
+                        <h3>اطلاعات تماس</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> کابل، خیابان پوهنتون، پردیس مرکزی</p>
+                        <p><i class="fas fa-phone"></i> ۰۲۱-۸۸۷۶۵۴۳۲</p>
+                        <p><i class="fas fa-envelope"></i> info@au.edu.af</p>
+                        <div class="social-icons" style="margin-top: 1rem;">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>پوهنتون البرز</h4>
+                <p>پیشرو در آموزش و پژوهش</p>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>دسترسی سریع</h4>
+                <a href="#" data-page="home">خانه</a>
+                <a href="#" data-page="courses">دوره‌ها</a>
+                <a href="#" data-page="research">پژوهش</a>
+                <a href="#" data-page="blog">وبلاگ</a>
+            </div>
+            <div class="footer-col">
+                <h4>تماس</h4>
+                <p>info@au.edu.af</p>
+                <p>07444343222</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© ۲۰۲۶ پوهنتون البرز - تمامی حقوق محفوظ است</div>
+    </div>
+</footer>
+<script type="module" src="./app.js"></script>
+<script src="./formValidation.js"></script>
+<script src="./contactValidation.js"></script>
+</body>
+</html>
