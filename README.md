@@ -22,16 +22,16 @@ This project includes **Dark Mode & Light Mode**, **Responsive Design**, and **F
 
 ---
 
-# 📱 Responsive Design
+## 📱 Responsive Design
 
 
-# 🌙 Dark & Light Mode
+## 🌙 Dark & Light Mode
 
 
 
 ---
 
-# 📋 Form Validation
+## 📋 Form Validation
 
 
 
@@ -52,7 +52,7 @@ https://university-profile.netlify.app/
 
 
 
----
+
 
 
 
