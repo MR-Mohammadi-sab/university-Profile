@@ -50,12 +50,4 @@ https://university-profile.netlify.app/
 
 ---
 
-
-
-
-
-
-
-# 👨‍💻 Author
-
 ## Developed by Your Mohammad Asif
