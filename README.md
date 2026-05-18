@@ -45,7 +45,7 @@ This project includes **Dark Mode & Light Mode**, **Responsive Design**, and **F
 # 🌐 Live Demo
 
 ```bash
-https://your-live-demo-link.com
+https://university-profile.netlify.app/
 ```
 
 ---
